@@ -3,65 +3,126 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FreshCut Barbing Salon</title>
+  <title>Yusuf Abdulsalam | Frontend Developer</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- HEADER -->
-  <header>
-    <div class="logo">FreshCut</div>
-    <nav id="nav">
+  <header class="header">
+    <div class="logo">Yusuf<span>Dev</span></div>
+    <nav class="nav" id="nav">
       <a href="#home">Home</a>
       <a href="#about">About</a>
       <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
+      <a href="#projects">Projects</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact" class="nav-btn">Contact</a>
     </nav>
     <div class="menu-btn" onclick="toggleMenu()">☰</div>
   </header>
 
-  <!-- HOME -->
-  <section id="home" class="home">
-    <h1>Clean Cuts. Fresh Looks.</h1>
-    <p>Professional barbing services at affordable prices</p>
-    <div class="buttons">
-      <a href="tel:+2348012345678" class="btn">📞 Call Now</a>
-      <a href="https://wa.me/2348012345678" class="btn whatsapp">💬 WhatsApp</a>
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm <span>Yusuf Abdulsalam</span></h1>
+      <p>Frontend Developer | HTML, CSS, JavaScript</p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn">📩 Hire Me</a>
+        <a href="tel:+2348012345678" class="btn">📞 Call Now</a>
+        <a href="https://wa.me/2348012345678" class="btn btn-green">💬 WhatsApp</a>
+         <a href="mailto:kingofpeace431@gmail.com">kingofpeace431@gmail.com</a>
+      </div>
     </div>
   </section>
 
   <!-- ABOUT -->
-  <section id="about">
-    <h2>About Us</h2>
-    <p>
-      FreshCut Barbing Salon offers quality and stylish haircuts for men and boys.
-      We focus on clean cuts, comfort, and customer satisfaction.
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p class="section-text">
+      I am a 17-year-old frontend developer skilled in HTML, CSS, and JavaScript. 
+      I build clean, responsive websites for businesses and individuals.
     </p>
   </section>
 
   <!-- SERVICES -->
-  <section id="services">
-    <h2>Our Services</h2>
-    <div class="service-box">
-      <div class="service">Adult Haircut</div>
-      <div class="service">Children Haircut</div>
-      <div class="service">Beard Shaping</div>
-      <div class="service">Home Service</div>
+  <section id="services" class="section bg-light">
+    <h2>Services</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Business Websites</h3>
+        <p>Modern websites for shops, salons, and small businesses.</p>
+      </div>
+      <div class="card">
+        <h3>Portfolio Websites</h3>
+        <p>Showcase yourself professionally online.</p>
+      </div>
+      <div class="card">
+        <h3>Landing Pages</h3>
+        <p>Promote events or products with attractive pages.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS / GALLERY -->
+  <section id="projects" class="section">
+    <h2>My Projects</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="images/barbing1.jpg" alt="Barbing Salon Website">
+        <p>Barbing Salon</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images/restaurant1.jpg" alt="Restaurant Website">
+        <p>Restaurant</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images/portfolio1.jpg" alt="Portfolio Website">
+        <p>Portfolio Website</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="section bg-light">
+    <h2>Testimonials</h2>
+    <div class="testimonials">
+      <div class="testimonial-card">
+        <p>"Yusuf built a website for my salon, and it looks amazing!"</p>
+        <h4>- Mr. John, Lagos</h4>
+      </div>
+      <div class="testimonial-card">
+        <p>"Professional and fast. Highly recommend for portfolio sites."</p>
+        <h4>- Aisha, Student</h4>
+      </div>
+      <div class="testimonial-card">
+        <p>"Great design, easy to navigate. Very satisfied."</p>
+        <h4>- Barbing Shop Owner</h4>
+      </div>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>📍 Location: Main Street, Lagos</p>
-    <p>📞 Phone: 0801 234 5678</p>
-    <p>⏰ Open: Mon – Sat (8am – 8pm)</>
-    <a href="https://wa.me/2348012345678" class="btn whatsapp">Chat on WhatsApp</a>
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <div class="contact-box">
+      <form action="#" id="contactForm">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Message" rows="5" required></textarea>
+        <button type="submit" class="btn btn-green">Send Message</button>
+      </form>
+      <p class="contact-info">
+       <a href="tel:+2348012345678" class="btn">📞 Call Now</a>
+        <a href="https://wa.me/2348012345678" class="btn btn-green">💬 WhatsApp</a>
+        <a href="mailto:kingofpeace431@gmail.com">kingofpeace431@gmail.com</a>
+      </p>
+    </div>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <p>© 2026 FreshCut Barbing Salon</p>
+    <p>© 2026 Yusuf Abdulsalam | Frontend Developer</p>
   </footer>
 
   <script src="script.js"></script>
